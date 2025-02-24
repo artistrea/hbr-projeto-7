@@ -101,9 +101,6 @@ void open_menu(
         closed = 1;
       }
 
-      // printf("recvd button click\n");
-      // printf("Selected menu item: %d. %s\n", selected_menu_item, menu->options[selected_menu_item].name);
-
       if (selected_menu_item != -1 &&  menu->options[selected_menu_item].on_click) {
         menu->options[selected_menu_item].on_click(frame_area, ssd, cursor);
       }
